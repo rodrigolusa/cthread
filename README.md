@@ -1,14 +1,14 @@
 ## UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL
 
-## INSTITUTO DE INFORMÁTICA – INFORMÁTICA APLICADA
+INSTITUTO DE INFORMÁTICA – INFORMÁTICA APLICADA
 
-## INF01142 – Sistemas Operacionais I N – 2019/0 2
+INF01142 – Sistemas Operacionais I N – 2019/0 2
 
-# Trabalho Prático I – Entrega: 9 de outubro de 2019
+Trabalho Prático I – Entrega: 9 de outubro de 2019
 
-# Implementação de Biblioteca de Threads cthreads 19. 2
+## Implementação de Biblioteca de Threads cthreads 19. 2
 
-## 1. Descrição Geral
+### 1. Descrição Geral
 
 O objetivo deste trabalho é a aplicação dos conceitos de sistemas operacionais relacionados ao
 escalonamento e ao contexto de execução, o que inclui a criação, chaveamento e destruição de
@@ -37,7 +37,7 @@ Essas estruturas, se necessário, podem ser modificadas APENAS pela inclusão de
 mesmo assim, só após os campos já fornecidos. Todos esses arquivos disponibilizados são fornecidos no
 arquivo _cthreads.tar.gz_ disponível no Moodle junto com a especificação.
 
-## 2. Descrição Geral
+### 2. Descrição Geral
 
 A biblioteca cthread deverá ser capaz de gerenciar uma quantidade variável de threads (potencialmente
 grande), limitada pela capacidade de memória RAM disponível na máquina virtual. Cada thread deverá
@@ -87,7 +87,7 @@ deve obter o valor da hora da máquina e registrá-lo ( _t 1_ ). Quando a _threa
 deverá ser feito uma nova tomada de tempo ( _t 2_ ). A diferença entre os tempos ( _t 2 -t 1_ ), deverá ser usado
 para definir a nova prioridade da _thread_.
 
-## 3. Interface de programação
+### 3. Interface de programação
 
 A biblioteca cthread deve oferecer uma interface de programação (API) para permitir seu uso para o
 desenvolvimento de programas. O grupo deverá desenvolver as funções dessa API, conforme descrição
@@ -236,7 +236,7 @@ Caso contrário, retorna um valor negativo.
 implementadas. Nesse caso, devem apenas retornar o código de erro (-9). A função _cidentify_ , apesar de
 ser obrigatória sua implementação, NÃO vale pontos na avaliação final.
 
-## 4. Comportamento da thread main
+### 4. Comportamento da thread main
 
 Ao lançar a execução de um programa, o sistema operacional cria um processo e associa a esse processo
 uma thread principal (main), pois todo processo tem pelo menos um fluxo de execução. Assim, na
@@ -259,7 +259,7 @@ A thread _main_ também tem prioridade e será calculada da mesma forma que as d
 **IMPORTANTE** : A primeira tomada de tempo da _main_ ( _t 1_ ) deverá ser realizada na primeira chamada à
 biblioteca _cthreads_ , não importando a função.
 
-## 5. Entregáveis: o que deve ser entregue?
+### 5. Entregáveis: o que deve ser entregue?
 
 A entrega do trabalho será realizada através da submissão pelo Moodle de um arquivo tar.gz, cuja
 estrutura de diretórios deverá seguir, OBRIGATORIAMENTE, a mesma estrutura de diretórios do arquivo
@@ -276,7 +276,7 @@ gerar um novo arquivo tar.gz, conforme descrito no ANEXO II. Observe também o s
 O arquivo tar.gz deverá conter os arquivos fontes da implementação, os arquivos de include, a
 biblioteca, a documentação, os makefiles e os programas de testes.
 
-## 6. Arquivo .tar.gz
+### 6. Arquivo .tar.gz
 
 Será fornecido pelo professor (disponível no Moodle) um arquivo cthread.tar.gz, que deve ser
 descompactado, conforme descrito no ANEXO II, de maneira a gerar, em seu disco, a estrutura de
@@ -313,7 +313,7 @@ support.pdf ARQUIVO: arquivo com a documentação das funções da biblioteca de
 
 Para criar programas de teste que utilizem a biblioteca cthread siga os procedimentos da seção 8.
 
-## 7. Geração da libcthread (descrição do Makefile)
+### 7. Geração da libcthread (descrição do Makefile)
 
 As funcionalidades da cthread deverão ser disponibilizadas através da biblioteca denominada
 libcthread.a. Uma biblioteca é um tipo especial de programa objeto em que suas funções são chamadas
@@ -343,7 +343,7 @@ De forma similar, o _makefile_ do diretório _testes_ , deverá ter a regra “a
 executáveis dos programas de teste fornecidos) e a regra “ _clean_ ” para remover todos os arquivos
 binários (arquivos _.o_ ) e os executáveis dos programas de teste.
 
-## 8. Utilizando a cthread : execução e programação (programas de teste)
+### 8. Utilizando a cthread : execução e programação (programas de teste)
 
 A partir do main de um programa C poderão ser lançadas várias threads através da primitiva de criação
 de threads. Cada thread corresponderá, na verdade, a execução de uma função desse programa. Todas
@@ -361,7 +361,7 @@ disponível, nesse mesmo diretório, um makefile exemplo para gerar esses progra
 IMPORTANTE: os programas exemplo são do semestre passado e precisam ser adaptados para a API e
 para o comportamento da biblioteca _cthreads_ deste semestre.
 
-## 9. Material suplementar de apoio
+### 9. Material suplementar de apoio
 
 A biblioteca definida constitui o que se chama de biblioteca de threads em nível de usuário (modelo
 N:1). Na realidade, o que está sendo implementado é uma espécie de máquina virtual que realiza o
@@ -370,7 +370,7 @@ manipulação das cthreads são as chamadas de sistema providas pelo GNU/Linux: 
 setcontext(), getcontext() e swapcontext(). Estude o comportamento dessas funções.
 
 
-## 10. Critérios de avaliação
+### 10. Critérios de avaliação
 
 Somente serão avaliados os trabalhos que obedecerem as seguintes condições:
 
@@ -386,7 +386,7 @@ desenvolvidos pelos professores da disciplina. A nota será proporcional à quan
 desses programas, usando a _cthreads_ e seguindo a especificação, considerando-se a dificuldade relativa
 de cada um.
 
-## 11. Avisos gerais – LEIA com MUITA ATENÇÃO
+### 11. Avisos gerais – LEIA com MUITA ATENÇÃO
 
 1. É condição para avaliação dos trabalhos a obediência RÍGIDA dos padrões de entrega definidos
     na seção 10.
@@ -396,7 +396,7 @@ de cada um.
     Moodle. Deverá ser entregue um arquivo tar.gz conforme descrito na seção 6. NÃO haverá
     extensão de prazos.
 
-## 12. Observações
+### 12. Observações
 
 Recomenda-se a troca de ideias entre os alunos. Entretanto, a identificação de cópias de trabalhos
 acarretará na aplicação do Código Disciplinar Discente e a tomada das medidas cabíveis para essa
